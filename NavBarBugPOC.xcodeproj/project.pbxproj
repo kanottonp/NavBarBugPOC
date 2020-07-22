@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CA8A94D424C8268700E28D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A94D324C8268700E28D0F /* AppDelegate.swift */; };
-		CA8A94D624C8268700E28D0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A94D524C8268700E28D0F /* SceneDelegate.swift */; };
 		CA8A94D824C8268700E28D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A94D724C8268700E28D0F /* ViewController.swift */; };
 		CA8A94DB24C8268700E28D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8A94D924C8268700E28D0F /* Main.storyboard */; };
 		CA8A94DD24C8268900E28D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8A94DC24C8268900E28D0F /* Assets.xcassets */; };
 		CA8A94E024C8268900E28D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8A94DE24C8268900E28D0F /* LaunchScreen.storyboard */; };
 		CA8A94EB24C8268A00E28D0F /* NavBarBugPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A94EA24C8268A00E28D0F /* NavBarBugPOCTests.swift */; };
 		CA8A94F624C8268A00E28D0F /* NavBarBugPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A94F524C8268A00E28D0F /* NavBarBugPOCUITests.swift */; };
+		CA8A950424C82A6D00E28D0F /* SlideAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8A950324C82A6D00E28D0F /* SlideAnimatedTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		CA8A94D024C8268700E28D0F /* NavBarBugPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavBarBugPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A94D324C8268700E28D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA8A94D524C8268700E28D0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA8A94D724C8268700E28D0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA8A94DA24C8268700E28D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA8A94DC24C8268900E28D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		CA8A94F124C8268A00E28D0F /* NavBarBugPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavBarBugPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8A94F524C8268A00E28D0F /* NavBarBugPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarBugPOCUITests.swift; sourceTree = "<group>"; };
 		CA8A94F724C8268A00E28D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8A950324C82A6D00E28D0F /* SlideAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideAnimatedTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				CA8A94D324C8268700E28D0F /* AppDelegate.swift */,
-				CA8A94D524C8268700E28D0F /* SceneDelegate.swift */,
 				CA8A94D724C8268700E28D0F /* ViewController.swift */,
 				CA8A94D924C8268700E28D0F /* Main.storyboard */,
 				CA8A94DC24C8268900E28D0F /* Assets.xcassets */,
 				CA8A94DE24C8268900E28D0F /* LaunchScreen.storyboard */,
 				CA8A94E124C8268900E28D0F /* Info.plist */,
+				CA8A950324C82A6D00E28D0F /* SlideAnimatedTransitioning.swift */,
 			);
 			path = NavBarBugPOC;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			files = (
 				CA8A94D824C8268700E28D0F /* ViewController.swift in Sources */,
 				CA8A94D424C8268700E28D0F /* AppDelegate.swift in Sources */,
-				CA8A94D624C8268700E28D0F /* SceneDelegate.swift in Sources */,
+				CA8A950424C82A6D00E28D0F /* SlideAnimatedTransitioning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HP9CY8GRT;
 				INFOPLIST_FILE = NavBarBugPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HP9CY8GRT;
 				INFOPLIST_FILE = NavBarBugPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
